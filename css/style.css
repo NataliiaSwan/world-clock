@@ -1,7 +1,10 @@
 body {
-  background-color: blueviolet;
+  background-color: red;
   color: black;
 }
 h1 {
+  text-align: center;
+}
+footer {
   text-align: center;
 }
