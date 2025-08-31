@@ -12,29 +12,36 @@
     <div class="container">
       <header></header>
       <h1>World clock</h1>
-      <select>
+      <select id="city">
         <option value="">Select a city</option>
-        <option value="">London</option>
-        <option value="">New York</option>
-        <option value="">Kharkiv</option>
+        <option value="Europe/London">London</option>
+        <option value="America/New_York">New York</option>
+        <option value="Europe/Kiev">Kiev</option>
       </select>
-      <div class="city" id="los-angeles">
-        <div>
-          <h2>Los Angeles</h2>
+      <div id="cities">
+        <div class="city" id="los-angeles">
+          <div>
+            <h2>Los Angeles</h2>
 
-          <img src="https://flagcdn.com/us.svg" width="30" alt="USA flag" /> USA
-          <div class="date"></div>
+            <img src="https://flagcdn.com/us.svg" width="30" alt="USA flag" />
+            USA
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
-      </div>
-      <div class="city" id="paris">
-        <div>
-          <h2>Paris</h2>
-          <img src="https://flagcdn.com/fr.svg" width="30" alt="France flag" />
-          France
-          <div class="date">August 15th 2022</div>
+        <div class="city" id="paris">
+          <div>
+            <h2>Paris</h2>
+            <img
+              src="https://flagcdn.com/fr.svg"
+              width="30"
+              alt="France flag"
+            />
+            France
+            <div class="date">August 15th 2022</div>
+          </div>
+          <div class="time">1:48:15<small> AM </small></div>
         </div>
-        <div class="time">1:48:15<small> AM </small></div>
       </div>
     </div>
     <footer>
