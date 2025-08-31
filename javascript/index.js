@@ -11,6 +11,7 @@ function updateTime() {
       "h:m:ss[<small>]A[</small>]"
     );
   }
+
   // Paris
   let parisElement = document.querySelector("#paris");
   if (parisElement) {
@@ -23,16 +24,17 @@ function updateTime() {
       "HH:m:ss[<small>]A[</small>]"
     );
   }
-  updateTime();
-  setInterval(updateTime, 1000);
 }
+updateTime();
+setInterval(updateTime, 1000);
+
 function updateCity(event) {
   let cityTimeZone = event.target.value;
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
-  citiesElement.innerHTML = cityTimeZone;
-  citiesElement.innerHTML = `
+
+  citiesElement.innerHTML += `
  <div class="city">
           <div>
             <h2>${cityName}</h2>
