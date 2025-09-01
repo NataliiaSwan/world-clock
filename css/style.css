@@ -8,12 +8,6 @@ body {
   background-position: center;
 }
 
-body::before {
-  content: "";
-  inset: 0;
-  z-index: 0;
-}
-
 .container {
   position: relative;
   z-index: 1;
